@@ -1,0 +1,112 @@
+{
+  "ALTS": {
+    "Menu": {
+      "PreviaLoading": {
+        "Nome": "Preview loading screen",
+        "Rotulo": "Show loading",
+        "Dica": "Shows the loading screen for a few seconds. Click it to close."
+      },
+      "PreviaPausa": {
+        "Nome": "Preview pause screen",
+        "Rotulo": "Show pause",
+        "Dica": "Shows the pause screen. Click it to close."
+      }
+    },
+    "Config": {
+      "loadingAtivo": {
+        "Nome": "Enable loading screen",
+        "Dica": "Shows the custom screen when opening the world and changing scenes."
+      },
+      "loadingFundo": {
+        "Nome": "Loading: background",
+        "Dica": "Image or video (webm/mp4) covering the whole screen. Empty = dark background."
+      },
+      "loadingLogo": {
+        "Nome": "Loading: logo",
+        "Dica": "Small image above the title. Empty = no logo."
+      },
+      "loadingChamada": {
+        "Nome": "Loading: kicker",
+        "Dica": "Small text above the title. E.g. \"The story continues...\""
+      },
+      "loadingTitulo": {
+        "Nome": "Loading: title",
+        "Dica": "Large title (e.g. campaign name). Empty = world title."
+      },
+      "loadingFrases": {
+        "Nome": "Loading: quotes",
+        "Dica": "Random quotes below the bar, separated by | (pipe)."
+      },
+      "mostrarNomeCena": {
+        "Nome": "Loading: show scene name",
+        "Dica": "Shows \"Loading <scene>...\". Uses the scene navigation name when set."
+      },
+      "duracaoMinima": {
+        "Nome": "Loading: minimum duration (ms)",
+        "Dica": "Minimum time on screen when changing scenes, so light scenes don't flash."
+      },
+      "pausaAtiva": {
+        "Nome": "Enable pause screen",
+        "Dica": "Replaces Foundry's default pause indicator."
+      },
+      "pausaTitulo": {
+        "Nome": "Pause: title",
+        "Dica": "E.g. \"Game paused\"."
+      },
+      "pausaSubtitulo": {
+        "Nome": "Pause: subtitle",
+        "Dica": "E.g. \"Be right back...\". Empty = no subtitle."
+      },
+      "pausaImagem": {
+        "Nome": "Pause: image",
+        "Dica": "Central icon of the pause screen. Empty = no image."
+      },
+      "pausaAnimacao": {
+        "Nome": "Pause: image animation",
+        "Dica": "Motion of the central icon.",
+        "Pulsar": "Pulse",
+        "Girar": "Spin",
+        "Flutuar": "Float",
+        "Nenhuma": "None"
+      },
+      "pausaFrases": {
+        "Nome": "Pause: quotes",
+        "Dica": "Random quote on each pause, separated by | (pipe). Empty = no quote."
+      },
+      "pausaDesfoque": {
+        "Nome": "Pause: background blur (px)",
+        "Dica": "Blur applied to the table while paused."
+      },
+      "corPrimaria": {
+        "Nome": "Primary color",
+        "Dica": "Hex color (e.g. #e0452b). Start of the pause title and subtitle."
+      },
+      "corSecundaria": {
+        "Nome": "Secondary color",
+        "Dica": "Hex color (e.g. #5b7cff). End of the pause title, title glow and progress bar."
+      },
+      "fonteTitulo": {
+        "Nome": "Title font",
+        "Dica": "Font name. A Foundry font or one added in Core Settings → Additional Fonts."
+      },
+      "fonteFrase": {
+        "Nome": "Quote font",
+        "Dica": "Font name or CSS list (e.g. Courier New, monospace)."
+      }
+    },
+    "Status": {
+      "Inicializando": "Initializing...",
+      "Traducoes": "Loading translations...",
+      "Mundo": "Preparing the world...",
+      "Encerrando": "Closing previous scene...",
+      "Cena": "Loading {cena}...",
+      "CenaSemNome": "Loading scene...",
+      "Recursos": "Loading assets ({feitos}/{total})...",
+      "Interface": "Building the interface...",
+      "Pronto": "Ready!"
+    },
+    "Avisos": {
+      "LoadingDesativado": "The loading screen is disabled in the settings."
+    }
+  }
+}

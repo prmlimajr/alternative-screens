@@ -1,0 +1,112 @@
+{
+  "ALTS": {
+    "Menu": {
+      "PreviaLoading": {
+        "Nome": "Pré-visualizar tela de loading",
+        "Rotulo": "Ver loading",
+        "Dica": "Mostra a tela de loading por alguns segundos. Clique nela para fechar."
+      },
+      "PreviaPausa": {
+        "Nome": "Pré-visualizar tela de pausa",
+        "Rotulo": "Ver pausa",
+        "Dica": "Mostra a tela de pausa. Clique nela para fechar."
+      }
+    },
+    "Config": {
+      "loadingAtivo": {
+        "Nome": "Ativar tela de loading",
+        "Dica": "Mostra a tela personalizada ao abrir o mundo e ao trocar de cena."
+      },
+      "loadingFundo": {
+        "Nome": "Loading: imagem de fundo",
+        "Dica": "Imagem ou vídeo (webm/mp4) que cobre a tela inteira. Vazio = fundo escuro."
+      },
+      "loadingLogo": {
+        "Nome": "Loading: logo",
+        "Dica": "Imagem pequena exibida acima do título. Vazio = sem logo."
+      },
+      "loadingChamada": {
+        "Nome": "Loading: chamada",
+        "Dica": "Texto pequeno acima do título. Ex.: \"A história continua...\""
+      },
+      "loadingTitulo": {
+        "Nome": "Loading: título",
+        "Dica": "Título grande (ex.: nome da campanha). Vazio = nome do mundo."
+      },
+      "loadingFrases": {
+        "Nome": "Loading: frases",
+        "Dica": "Frases sorteadas abaixo da barra, separadas por | (barra vertical)."
+      },
+      "mostrarNomeCena": {
+        "Nome": "Loading: mostrar nome da cena",
+        "Dica": "Exibe \"Carregando <cena>...\". Usa o nome de navegação da cena, se houver."
+      },
+      "duracaoMinima": {
+        "Nome": "Loading: duração mínima (ms)",
+        "Dica": "Tempo mínimo na tela ao trocar de cena, para não piscar em cenas leves."
+      },
+      "pausaAtiva": {
+        "Nome": "Ativar tela de pausa",
+        "Dica": "Substitui o indicador de pausa padrão do Foundry."
+      },
+      "pausaTitulo": {
+        "Nome": "Pausa: título",
+        "Dica": "Ex.: \"Jogo pausado\"."
+      },
+      "pausaSubtitulo": {
+        "Nome": "Pausa: subtítulo",
+        "Dica": "Ex.: \"Voltamos já...\". Vazio = sem subtítulo."
+      },
+      "pausaImagem": {
+        "Nome": "Pausa: imagem",
+        "Dica": "Ícone central da tela de pausa. Vazio = sem imagem."
+      },
+      "pausaAnimacao": {
+        "Nome": "Pausa: animação da imagem",
+        "Dica": "Movimento do ícone central.",
+        "Pulsar": "Pulsar",
+        "Girar": "Girar",
+        "Flutuar": "Flutuar",
+        "Nenhuma": "Nenhuma"
+      },
+      "pausaFrases": {
+        "Nome": "Pausa: frases",
+        "Dica": "Frases sorteadas a cada pausa, separadas por | (barra vertical). Vazio = sem frase."
+      },
+      "pausaDesfoque": {
+        "Nome": "Pausa: desfoque do fundo (px)",
+        "Dica": "Intensidade do desfoque aplicado à mesa durante a pausa."
+      },
+      "corPrimaria": {
+        "Nome": "Cor primária",
+        "Dica": "Cor em hexadecimal (ex.: #e0452b). Início do título da pausa e subtítulo."
+      },
+      "corSecundaria": {
+        "Nome": "Cor secundária",
+        "Dica": "Cor em hexadecimal (ex.: #5b7cff). Fim do título da pausa, brilho do título e barra de progresso."
+      },
+      "fonteTitulo": {
+        "Nome": "Fonte dos títulos",
+        "Dica": "Nome da fonte. Pode ser uma fonte do Foundry ou uma adicionada em Configurações Principais → Fontes Adicionais."
+      },
+      "fonteFrase": {
+        "Nome": "Fonte das frases",
+        "Dica": "Nome da fonte ou lista CSS (ex.: Courier New, monospace)."
+      }
+    },
+    "Status": {
+      "Inicializando": "Inicializando...",
+      "Traducoes": "Carregando traduções...",
+      "Mundo": "Preparando o mundo...",
+      "Encerrando": "Encerrando a cena anterior...",
+      "Cena": "Carregando {cena}...",
+      "CenaSemNome": "Carregando a cena...",
+      "Recursos": "Carregando recursos ({feitos}/{total})...",
+      "Interface": "Montando a interface...",
+      "Pronto": "Pronto!"
+    },
+    "Avisos": {
+      "LoadingDesativado": "A tela de loading está desativada nas configurações."
+    }
+  }
+}
