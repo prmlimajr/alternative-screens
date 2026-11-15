@@ -39,7 +39,7 @@
       },
       "mostrarNomeCena": {
         "Nome": "Loading: show scene name",
-        "Dica": "Shows \"Loading <scene>...\". Uses the scene navigation name when set."
+        "Dica": "Uses the scene name as the loading screen title (navigation name when set). Off = the title configured above."
       },
       "duracaoMinima": {
         "Nome": "Loading: minimum duration (ms)",

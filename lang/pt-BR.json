@@ -39,7 +39,7 @@
       },
       "mostrarNomeCena": {
         "Nome": "Loading: mostrar nome da cena",
-        "Dica": "Exibe \"Carregando <cena>...\". Usa o nome de navegação da cena, se houver."
+        "Dica": "Usa o nome da cena como título da tela de loading (nome de navegação, se houver). Desligado = título configurado acima."
       },
       "duracaoMinima": {
         "Nome": "Loading: duração mínima (ms)",

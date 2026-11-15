@@ -79,7 +79,7 @@ const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
 /* -------------------------------------------- */
 
 const L = {
-  ui: null, // { raiz, barra, status, frase }
+  ui: null, // { raiz, titulo, barra, status, frase }
   alvo: 0,
   atual: 0,
   desde: 0,
@@ -106,7 +106,8 @@ function construirLoading() {
   if (logo) c.append(midia(logo, "alts-logo"));
   const chamada = cfg("loadingChamada");
   if (chamada) c.append(el("p", "alts-chamada", chamada));
-  c.append(el("h1", "alts-titulo", cfg("loadingTitulo") || game.world?.title || ""));
+  const titulo = el("h1", "alts-titulo", tituloPadrao());
+  c.append(titulo);
 
   const trilho = el("div", "alts-trilho");
   const barra = el("div", "alts-barra");
@@ -117,7 +118,16 @@ function construirLoading() {
   raiz.append(c);
 
   document.body.append(raiz);
-  return { raiz, barra, status, frase };
+  return { raiz, titulo, barra, status, frase };
+}
+
+function tituloPadrao() {
+  return cfg("loadingTitulo") || game.world?.title || "";
+}
+
+/** Troca o título grande da tela de loading (ex.: pelo nome da cena). */
+function definirTitulo(texto) {
+  if (L.ui) L.ui.titulo.textContent = texto || tituloPadrao();
 }
 
 function trocarFrase() {
@@ -234,10 +244,11 @@ export function previewLoading() {
   L.ui.raiz.addEventListener("click", () => esconderLoading(), { once: true });
   const etapas = [
     [10, loc("Status.Encerrando")],
-    [30, loc("Status.Cena", { cena: game.scenes?.viewed?.name ?? "..." })],
+    [30, loc("Status.CenaSemNome")],
     [60, loc("Status.Recursos", { feitos: 12, total: 24 })],
     [90, loc("Status.Interface")]
   ];
+  definirTitulo(nomeDaCena(game.scenes?.viewed));
   etapas.forEach(([pct, txt], i) => setTimeout(() => progresso(pct, txt), 800 * (i + 1)));
   setTimeout(() => L.ui?.raiz.classList.contains("alts-preview") && esconderLoading(), 6000);
 }
@@ -438,8 +449,9 @@ Hooks.on("canvasInit", (canvas) => {
     L.minimo = cfg("duracaoMinima");
     mostrarLoading();
   }
-  const nome = nomeDaCena(cena);
-  progresso(30, nome ? loc("Status.Cena", { cena: nome }) : loc("Status.CenaSemNome"));
+  // O título grande passa a ser o nome da cena; o status fica genérico para não repetir.
+  definirTitulo(nomeDaCena(cena));
+  progresso(30, loc("Status.CenaSemNome"));
 });
 
 Hooks.on("canvasReady", () => {
